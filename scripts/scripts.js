@@ -138,10 +138,17 @@ function loadDelayed() {
   // load anything that can be postponed to the latest here
 }
 
+async function apiCaller() {
+  const data = await fetch(process.env.API_KEY);
+  const json = await data.json();
+  console.log(json);
+}
+
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+  apiCaller();
 }
 
 loadPage();
