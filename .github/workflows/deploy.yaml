@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Run EDS Script
         env:
-          MY_API_KEY: ${{ secrets.MY_API_KEY }}
+          MY_API_KEY: ${{ secrets.API_GIT }}
         run: node scripts/scripts.js
         
 
