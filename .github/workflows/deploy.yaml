@@ -10,11 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set environment variables
-        run: echo "MY_API_KEY=${{ secrets.API_GIT }}" >> $GITHUB_ENV
-
-      - name: Deploy or run script
+      - name: Run EDS Script
+        env:
+          MY_API_KEY: ${{ secrets.MY_API_KEY }}
         run: node scripts/scripts.js
+        
+
