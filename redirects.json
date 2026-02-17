@@ -1,0 +1,16 @@
+{
+    "total": 1,
+    "offset": 0,
+    "limit": 1,
+    "data": [
+        {
+            "source": "/het",
+            "destination": "/copy-of-footer"
+        }
+    ],
+    "columns": [
+        "source",
+        "destination"
+    ],
+    ":type": "sheet"
+}
