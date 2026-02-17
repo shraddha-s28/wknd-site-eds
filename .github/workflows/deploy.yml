@@ -17,4 +17,4 @@ jobs:
         run: echo "MY_API_KEY=${{ secrets.API_KEY }}" >> $GITHUB_ENV
 
       - name: Deploy or run script
-        run: node scripts.js
+        run: node scripts/scripts.js
